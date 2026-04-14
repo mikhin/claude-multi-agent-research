@@ -60,13 +60,16 @@ Each agent should:
 
 ## Step 3: Synthesize
 
-After all 4 agents complete, read all 4 outputs and produce a **synthesis report** that:
+After all 4 agents complete, read all 4 outputs and produce a **synthesis report**.
 
-1. Opens with a 2-3 sentence executive summary
-2. Highlights key **agreements** across agents (what all perspectives converge on)
-3. Highlights key **tensions** (where agents disagree or conflict)
-4. Lists the top **risks and blind spots** surfaced by the Critic and Devil's Advocate
-5. Ends with **recommended next steps** or questions worth exploring further
+**Critical rule: each finding appears in exactly one place.** Do not repeat the same issue across multiple sections. Overlapping categories (e.g. "risks" + "recommendations" restating the same items) make the report confusing and hard to follow.
+
+Recommended structure:
+
+1. **Executive summary** — 2-3 sentences, the overall verdict
+2. **Findings** — a single flat list or table. Each finding gets one row with columns: finding, severity/type, source agent(s), recommended action. No finding should appear twice.
+
+If grouping is helpful, use mutually exclusive groups (e.g. by topic area, not by "what's wrong" vs "what to do about it"). Never have separate "problems" and "recommendations" sections that mirror each other.
 
 Write the synthesis to `/tmp/research/{topic-slug}/synthesis.md`.
 
