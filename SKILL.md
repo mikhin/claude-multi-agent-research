@@ -62,14 +62,14 @@ Each agent should:
 
 After all 4 agents complete, read all 4 outputs and produce a **synthesis report**.
 
-**Critical rule: each finding appears in exactly one place.** Do not repeat the same issue across multiple sections. Overlapping categories (e.g. "risks" + "recommendations" restating the same items) make the report confusing and hard to follow.
+**Critical rule: each finding appears in exactly one place.** Never repeat the same issue across multiple sections.
 
-Recommended structure:
+Structure (mandatory):
 
 1. **Executive summary** — 2-3 sentences, the overall verdict
-2. **Findings** — a single flat list or table. Each finding gets one row with columns: finding, severity/type, source agent(s), recommended action. No finding should appear twice.
+2. **Findings** — one flat table. Columns: finding, severity/type, source agent(s), action. Each finding = one row. No finding appears twice. No separate "risks", "recommendations", "next steps" sections — the action column covers that.
 
-If grouping is helpful, use mutually exclusive groups (e.g. by topic area, not by "what's wrong" vs "what to do about it"). Never have separate "problems" and "recommendations" sections that mirror each other.
+Do NOT create multiple overlapping sections (e.g. "bugs" + "risks" + "recommendations" that restate the same items). All findings go into the single table.
 
 Write the synthesis to `/tmp/research/{topic-slug}/synthesis.md`.
 
